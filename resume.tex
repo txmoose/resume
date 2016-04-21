@@ -1,0 +1,208 @@
+\documentclass[10pt,oneside]{article}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+
+\pagestyle{empty}
+\geometry{letterpaper,tmargin=.63in,bmargin=.63in,lmargin=.63in,rmargin=.63in,headheight=0in,headsep=0in,footskip=.3in}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\setlength{\itemsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\tabcolsep}{0in}
+
+% Name and contact information
+\newcommand{\name}{Kyle Brieden}
+\newcommand{\addr}{8600 N FM 620 Apt 2437, Austin, TX 78726}
+\newcommand{\phone}{(979) 575-9459}
+\newcommand{\email}{kyle@brieden.org}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New commands and environments
+
+% This defines how the name looks
+\newcommand{\bigname}[1]{
+    \begin{center}\fontfamily{phv}\selectfont\Huge\scshape#1\end{center}
+}
+
+% A ressection is a main section (<H1>Section</H1>)
+\newenvironment{ressection}[1]{
+    \vspace{4pt}
+    {\fontfamily{phv}\selectfont\Large#1}
+    \begin{itemize}
+    \vspace{3pt}
+}{
+    \end{itemize}
+}
+
+% A resitem is a simple list element in a ressection (first level)
+\newcommand{\resitem}[1]{
+    \vspace{-4pt}
+    \item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A ressubitem is a simple list element in anything but a ressection (second level)
+\newcommand{\ressubitem}[1]{
+    \vspace{-1pt}
+    \item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A resbigitem is a complex list element for stuff like jobs and education:
+%  Arg 1: Name of company or university
+%  Arg 2: Location
+%  Arg 3: Title and/or date range
+\newcommand{\resbigitem}[3]{
+    \vspace{-5pt}
+    \item
+    \textbf{#3} \\
+    \textit{#1}---#2
+}
+
+% This is a list that comes with a resbigitem
+\newenvironment{ressubsec}[3]{
+    \resbigitem{#1}{#2}{#3}
+    \vspace{-2pt}
+    \begin{itemize}
+}{
+    \end{itemize}
+}
+
+\newenvironment{resedusec}[3]{
+    \resbigitem{#1}{#2}{#3}
+    \vspace{-2pt}
+}
+
+
+% This is a simple sublist
+\newenvironment{reslist}[1]{
+    \resitem{\textbf{#1}}
+    \vspace{-5pt}
+    \begin{itemize}
+}{
+    \end{itemize}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Now for the actual document:
+
+\begin{document}
+
+\fontfamily{ppl} \selectfont
+
+% Name with horizontal rule
+\bigname{\name}
+
+\vspace{-8pt} \rule{\textwidth}{1pt}
+
+\vspace{-1pt} {\small\itshape \addr \hfill \phone; \email}
+
+\vspace{8 pt}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{ressection}{Objective}
+%
+%   \begin{ressubsec}{Seeking a challenging and rewarding position with the Electronic Arts team at Rackspace.}
+%   \end{ressubsec}
+%
+%\end{ressection}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Skills}
+
+    \resitem{\textbf{Operating Systems:} Linux (Debian, Ubuntu, ArchLinux, CentOS), familiarity with current Windows and Mac OSX versions.}
+
+    \begin{reslist}{Languages:}
+
+        \ressubitem{Able to work in Bash, Python, PHP, HTML, \LaTeX\ }
+
+    \end{reslist}
+
+    \begin{reslist}{Tools and Systems:}
+
+        \ressubitem{Familiar with Apache, Nginx, MySQL, PHP-FPM, git, NFS, OpenLDAP, OpenSSL, OpenVPN, OpenFTP, OpenSSH}
+
+        \ressubitem{Networking knowledge includes TCP/IP, Hourglass Internet Model, OSI Model, Layer 2 and 3 hardware and software (including Cisco IOS).}
+
+		\ressubitem{Experience working in AWS, Digital Ocean, Rackspace}
+    \end{reslist}
+
+
+\end{ressection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Certifications}
+    \begin{reslist}{Red Hat Certified Engineer}
+        \ressubitem{RHEL 6}
+        \ressubitem{12 July 2013}
+        \ressubitem{Certificate Number: 130-101-207}
+    \end{reslist}
+\end{ressection}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Experience}
+
+    \begin{ressubsec}{WP Engine}{Austin, TX}{Operations Engineer: November 2014-April 2016}
+        \ressubitem{Responsible for farm-wide monitoring and first response.  Assisting Systems Engineering team.}
+        \ressubitem{Farm maintenance, rolling out updates, and assisting support staff when needed}
+        \ressubitem{Operations Center - Third Shift}
+    \end{ressubsec}
+
+    \begin{ressubsec}{WP Engine}{Austin, TX}{Customer Support - Level 3: June 2014-November 2014}
+        \ressubitem{System focused, but also worked with customer custom code as well.}
+        \ressubitem{Emphasis on mentoring and training junior support techs and assisting management with day to day items.}
+        \ressubitem{Third Shift Customer Support Team}
+    \end{ressubsec}
+
+    \begin{ressubsec}{Rackspace}{San Antonio, TX}{Linux Administrator II: January 2014-June 2014}
+        \ressubitem{Linux Subject Matter Expert (SME) for Rackspace's most strategic accounts}
+        \ressubitem{Critial Accounts - Enterprise Support}
+    \end{ressubsec}
+
+    \begin{ressubsec}{Rackspace}{San Antonio, TX}{Linux Adminstrator I: December 2012-January2014}
+        \ressubitem{Provided chat and phone support, as well as ticket work for SMB customers from \$15 per month up to \$10,000 per month.}
+        \ressubitem{Managed Cloud - SMB}
+    \end{ressubsec}
+    \begin{ressubsec}{TAMU Telecommunications Academy}{College Station, TX}{Student Worker-BVCNet Admin: June 2011-December 2011}
+        \ressubitem{Developed, planned, and began deploying multiple public access computer labs around Bryan and College Station, TX.}
+        \ressubitem{Developed a roaming profile-like system so patrons could log in at any lab and have their own desktop.}
+        \ressubitem{Semester long position.}
+    \end{ressubsec}
+
+    \begin{ressubsec}{TAMU Cisco Lab}{College Station, TX}{Student Worker-Testing Assistant: September 2010-May 2011}
+        \ressubitem{Tested networking products for Cisco Systems under professor Sejun Song at TAMU.}
+        \ressubitem{Semester long position.}
+    \end{ressubsec}
+
+\end{ressection}
+\begin{ressection}{Education}
+    \begin{resedusec}{Texas A\&M University} {College Station, TX} {Telecommunications Engineering Technology}
+    \end{resedusec}
+\end{ressection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Achievements and Activities}
+
+    \resitem{Member of the Corps of Cadets, Company K-2, four years. Member of the 2008 National Champion Texas A\&M Fish Drill Team.}
+
+    \resitem{Planned and executed an outfit reunion and Parent's Weekend banquet for +150 people with very limited assistance from underclassmen and peers.}
+
+    \resitem{Member of TAULUG - Texas A\&M UNIX Linux Users Group.}
+
+    \resitem{Amateur Radio Operator - KF5MWZ, General Class.}
+
+    \resitem{Helped execute CCDC - Collegiate Cyber Defense Competition - as a member of the planning and execution "Gold Team".}
+
+\end{ressection}
+
+
+\end{document}
+
