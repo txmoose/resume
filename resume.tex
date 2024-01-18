@@ -3,7 +3,7 @@
 \usepackage[T1]{fontenc}
 
 \pagestyle{empty}
-\geometry{letterpaper,tmargin=.63in,bmargin=.63in,lmargin=.63in,rmargin=.63in,headheight=0in,headsep=0in,footskip=.3in}
+\geometry{letterpaper,tmargin=.63in,bmargin=.5in,lmargin=.5in,rmargin=.5in,headheight=0in,headsep=0in,footskip=.3in}
 
 \setlength{\parindent}{0in}
 \setlength{\parskip}{0in}
@@ -13,7 +13,7 @@
 
 % Name and contact information
 \newcommand{\name}{Kyle Brieden}
-\newcommand{\addr}{7063 Post Coach Dr, O'Fallon, MO 63368}
+\newcommand{\addr}{672 Georgia Way, Woodstock, GA 30188}
 \newcommand{\phone}{(979) 575-9459}
 \newcommand{\email}{kyle@brieden.org}
 
@@ -113,43 +113,49 @@
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Professional Summary}
 
-    \begin{resobj}{Experienced Senior Systems Engineer with demonstrated history in automation technologies such as Ansible, Terraform, Docker and Jenkins.  Skilled in bringing automation to a product's development pipeline, and strongly believe in the "cattle not pets" school of thought with infrastructure.  Seeking to grow knowledge and skills in production engineering.}
+    \begin{resobj}{Experienced Staff Systems Engineer with a demonstrated history in DevOps technologies such as Kubernetes, Docker, Ansible, GitHub Actions, and Terraform.  Skilled in modernizing application deployment strategies and strongly believe in the "cattle not pets" school of thought with infrastructure.  Seeking to grow skills in production engineering and help bring companies into modern production practices.}
    \end{resobj}
 
 \end{ressection}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Skills}
 
-    \resitem{\textbf{Operating Systems:} Linux (Amazon Linux, Ubuntu, ArchLinux, CentOS), as well as current Windows and Mac OSX versions.}
+    \resitem{\textbf{Operating Systems:} Linux (Amazon Linux, Ubuntu, ArchLinux, CentOS), as well as current Windows and MacOS versions.}
 
     \begin{reslist}{Automation Technologies:}
-        \ressubitem{Ansible, Salt Stack, Docker, Terraform, Jenkins, Packer}
+        \ressubitem{Ansible, Salt Stack, GitHub Actions, Docker, Terraform, Jenkins, Packer}
     \end{reslist}
 
     \begin{reslist}{Linux Technologies:}
-        \ressubitem{Apache, Nginx, MySQL, PHP-FPM, git, NFS, OpenLDAP, OpenSSL, OpenVPN, OpenFTP, OpenSSH, Postfix, Dovecot}
-    \end{reslist}
-
-    \begin{reslist}{Networking Technologies:}
-        \ressubitem{TCP/IP, Hourglass Internet Model, OSI Model, Layer 2 and 3 hardware and software (including Cisco IOS and JunOS)}
+        \ressubitem{Nginx, MySQL, PHP-FPM, git, NFS, OpenSSL, OpenVPN, Wireguard OpenSSH}
     \end{reslist}
 
     \begin{reslist}{Cloud Technologies:}
-		\ressubitem{Cloud Providers:  AWS, Digital Ocean}
-        \ressubitem{Hypervisors:  Proxmox, Xen Project, VMware, KVM}
+		\ressubitem{Cloud Providers:  AWS, GCP}
+        \ressubitem{Hypervisors:  VMware, Proxmox, KVM}
     \end{reslist}
 
     \begin{reslist}{Monitoring Technologies:}
-        \ressubitem{New Relic, Grafana, Promethius}
+        \ressubitem{Grafana, Prometheus, New Relic}
     \end{reslist}
 
     \begin{reslist}{Languages:}
-        \ressubitem{Able to work in Bash, Python, Groovy, \LaTeX\ }
+        \ressubitem{Able to work in GoLang, Python, Bash, \LaTeX\ }
     \end{reslist}
 
 \end{ressection}
 
 \begin{ressection}{Experience}
+    \begin{ressubsec}{Breco Tech, LLC}{Atlanta, GA}{Consultant: July 2023-Current}
+        \ressubitem{Private Consulting LLC to work grow skills otherwise missing from day job}
+        \ressubitem{Supporting AWS operations for startups looking to scale quickly by implementing container-based deployments early in software development}
+    \end{ressubsec}
+
+    \begin{ressubsec}{The Home Depot}{Atlanta, GA}{Staff Systems Engineer: June 2021-Current}
+        \ressubitem{Developer Operations and Platform Engineering Staff Engineer}
+        \ressubitem{Built out new Kubernetes-based on-prem production app environment for THD App Teams}
+        \ressubitem{Supported sunsetting of legacy platforms such as Pivotal Cloud Foundry foundations and Hadoop clusters}
+    \end{ressubsec}
 
     \begin{ressubsec}{Riot Games}{St. Louis, MO}{Senior Systems Engineer: December 2017-May 2021}
         \ressubitem{Modernized build pipeline for the game Legends of Runeterra (LoR)}
@@ -195,6 +201,15 @@
     \end{ressubsec}
 
 \end{ressection}
+
+\begin{ressection}{Related Experience}
+    \resitem{Prompted by a grueling on call schedule that burned out numerous Systems Engineers at WP Engine, I started the Systems Operations Center (SOC) team to provided 3rd shift Systems Operations and Engineering coverage.}
+    \resitem{At Rackspace, I was a member of a community support effort engaging customers via community forums in addition to my front line support role.}
+    \resitem{I maintain a small home lab that includes a Proxmox hypervisor, PiHole DNS Ad Blocking, Wireguard VPN server, Raspberry Pi-based Kubernetes cluster, as well as other services and personal programming projects.}
+    \resitem{Amateur Radio Operator - KF5MWZ, General Class}
+    
+\end{ressection}
+
 \begin{ressection}{Education}
     \begin{resedusec}{Texas A\&M University} {College Station, TX} {Telecommunications Engineering Technology}
     \end{resedusec}
@@ -204,15 +219,6 @@
     \resitem{Planned and executed an outfit reunion and Parent's Weekend banquet for +150 people with very limited assistance from underclassmen and peers}
     \resitem{Member of TAULUG - Texas A\&M UNIX Linux Users Group}
     \resitem{Helped execute CCDC - Collegiate Cyber Defense Competition - as a member of the planning and execution "Gold Team"}
-\end{ressection}
-
-%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{ressection}{Related Experience}
-    \resitem{Prompted by a grueling on call schedule that burned out numerous Systems Engineers at WP Engine, I started the Systems Operations Center (SOC) team to provided 3rd shift Systems Operations and Engineering coverage.}
-    \resitem{At Rackspace, I was a member of a community support effort engaging customers via community forums in addition to my front line support role.}
-    \resitem{I maintain a small home lab that includes a Proxmox hypervisor, PiHole DNS Ad Blocking, Wireguard VPN server, private email server, as well as other services and personal programming projects.}
-    \resitem{Amateur Radio Operator - KF5MWZ, General Class}
-    
 \end{ressection}
 \end{document}
 
