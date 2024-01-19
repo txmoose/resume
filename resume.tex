@@ -13,7 +13,7 @@
 
 % Name and contact information
 \newcommand{\name}{Kyle Brieden}
-\newcommand{\addr}{672 Georgia Way, Woodstock, GA 30188}
+\newcommand{\addr}{Atlanta, Georgia}
 \newcommand{\phone}{(979) 575-9459}
 \newcommand{\email}{kyle@brieden.org}
 
@@ -89,14 +89,12 @@
     \end{itemize}
 }
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Now for the actual document:
 
 \begin{document}
 
-\fontfamily{ppl} \selectfont
+\fontfamily{lmss} \selectfont
 
 % Name with horizontal rule
 \bigname{\name}
@@ -107,9 +105,6 @@
 
 \vspace{8 pt}
 
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Professional Summary}
 
@@ -118,53 +113,33 @@
 
 \end{ressection}
 %%%%%%%%%%%%%%%%%%%%%%%%
-\begin{ressection}{Skills}
-
-    \resitem{\textbf{Operating Systems:} Linux (Amazon Linux, Ubuntu, ArchLinux, CentOS), as well as current Windows and MacOS versions.}
-
-    \begin{reslist}{Automation Technologies:}
-        \ressubitem{Ansible, Salt Stack, GitHub Actions, Docker, Terraform, Jenkins, Packer}
-    \end{reslist}
-
-    \begin{reslist}{Linux Technologies:}
-        \ressubitem{Nginx, MySQL, PHP-FPM, git, NFS, OpenSSL, OpenVPN, Wireguard OpenSSH}
-    \end{reslist}
-
-    \begin{reslist}{Cloud Technologies:}
-		\ressubitem{Cloud Providers:  AWS, GCP}
-        \ressubitem{Hypervisors:  VMware, Proxmox, KVM}
-    \end{reslist}
-
-    \begin{reslist}{Monitoring Technologies:}
-        \ressubitem{Grafana, Prometheus, New Relic}
-    \end{reslist}
-
-    \begin{reslist}{Languages:}
-        \ressubitem{Able to work in GoLang, Python, Bash, \LaTeX\ }
-    \end{reslist}
-
-\end{ressection}
-
 \begin{ressection}{Experience}
     \begin{ressubsec}{Breco Tech, LLC}{Atlanta, GA}{Consultant: July 2023-Current}
-        \ressubitem{Private Consulting LLC to work grow skills otherwise missing from day job}
-        \ressubitem{Supporting AWS operations for startups looking to scale quickly by implementing container-based deployments early in software development}
+        \ressubitem{Private Consulting LLC to grow skills otherwise missing from my day job}
+        \ressubitem{AWS operations for startups looking to scale quickly by implementing container-based deployments early in software development}
+        \ressubitem{Implementing Prometheus and Loki based monitoring and log aggregation}
+        \ressubitem{Build out dashboarding via Grafana}
     \end{ressubsec}
 
     \begin{ressubsec}{The Home Depot}{Atlanta, GA}{Staff Systems Engineer: June 2021-Current}
-        \ressubitem{Developer Operations and Platform Engineering Staff Engineer}
-        \ressubitem{Built out new Kubernetes-based on-prem production app environment for THD App Teams}
+        \ressubitem{Built out new Kubernetes-based on-prem production app environment for THD App Teams which includes out of the box metrics and logging, alerting, and integration with other THD Enterprise services such as Artifactory to allow app teams to focus on their apps rather than supporting functions}
+        \ressubitem{Infrastructure to support the on-prem environment is deployed into various GCP services}
+        \ressubitem{Assisted in developing a custom Terraform provider and custom code in GoLang, Python, and Bash in support of the new on-prem platform}
         \ressubitem{Supported sunsetting of legacy platforms such as Pivotal Cloud Foundry foundations and Hadoop clusters}
+        \ressubitem{Day to day team leadership roles such as backlog grooming, sprint planning, quarterly team objective setting, and team building activities}
+        \ressubitem{On-Call rotation to respond to business-impacting events as quckly as possible}
+        \ressubitem{White-glove customer service to support THD app teams on our platforms}
     \end{ressubsec}
 
     \begin{ressubsec}{Riot Games}{St. Louis, MO}{Senior Systems Engineer: December 2017-May 2021}
-        \ressubitem{Modernized build pipeline for the game Legends of Runeterra (LoR)}
+        \ressubitem{Replaced manual build pipeline with Jenkins and AWS-based CI/CD pipelines for the game Legends of Runeterra (LoR)}
         \ressubitem{Support day to day operations of LoR as part of the Production Engineering group, as well as automate tasks where able}
+        \ressubitem{Discovered and removed just over \$400,000/yr of unnecessary AWS spend}
         \ressubitem{Previous roles at Riot: Infrastructure Platform - Datacenter, Player Platform - Accounts}
     \end{ressubsec}
 
     \begin{ressubsec}{Macy's Systems \& Technology}{Johns Creek, GA}{Analyst 2 - Linux Automation: September 2016-December 2017}
-        \ressubitem{Developed automation to deliver prototyping environments for internal customers more quickly}
+        \ressubitem{Developed automation to deliver prototyping environments for internal customers more quickly via Puppet and vSphere}
         \ressubitem{Provide day to day operational support for Macy's infrastructure at large}
         \ressubitem{Linux Automation}
     \end{ressubsec}
@@ -175,10 +150,11 @@
         \ressubitem{DevOps Engineer - Remote - Contract}
     \end{ressubsec}
 
+    \pagebreak
+
     \begin{ressubsec}{WP Engine}{Austin, TX}{Operations Engineer: June 2014-April 2016}
         \ressubitem{Responsible for farm-wide monitoring and first response to assist Systems Engineering team}
-        \ressubitem{Production farm maintenance, rolling out updates, and assisting support staff when needed}
-        \ressubitem{Previous role at WP Engine: Customer Support - Level 3}
+        \ressubitem{Production farm maintenance, deploying updates, and assisting support staff when needed}
         \ressubitem{Operations Center - Third Shift}
     \end{ressubsec}
 
@@ -189,23 +165,13 @@
         \ressubitem{Critial Accounts - Enterprise Support}
     \end{ressubsec}
 
-    \begin{ressubsec}{TAMU Telecommunications Academy}{College Station, TX}{Student Worker-BVCNet Admin: June 2011-December 2011}
-        \ressubitem{Developed, planned, and began deploying multiple public access computer labs around Bryan and College Station, TX}
-        \ressubitem{Developed a roaming profile-like system so patrons could log in at any lab and have their own desktop}
-        \ressubitem{Semester long position}
-    \end{ressubsec}
-
-    \begin{ressubsec}{TAMU Cisco Lab}{College Station, TX}{Student Worker-Testing Assistant: September 2010-May 2011}
-        \ressubitem{Tested networking products for Cisco Systems under professor Sejun Song at TAMU}
-        \ressubitem{Semester long position}
-    \end{ressubsec}
-
 \end{ressection}
 
 \begin{ressection}{Related Experience}
-    \resitem{Prompted by a grueling on call schedule that burned out numerous Systems Engineers at WP Engine, I started the Systems Operations Center (SOC) team to provided 3rd shift Systems Operations and Engineering coverage.}
-    \resitem{At Rackspace, I was a member of a community support effort engaging customers via community forums in addition to my front line support role.}
     \resitem{I maintain a small home lab that includes a Proxmox hypervisor, PiHole DNS Ad Blocking, Wireguard VPN server, Raspberry Pi-based Kubernetes cluster, as well as other services and personal programming projects.}
+    \resitem{I quickly prototyped a small web app to replace the paper bid sheets for a silent auction for the nonprofit my wife works for.}
+    \resitem{I quickly moved from L3 support to start the Systems Operations Center (SOC) team to provide 3rd shift Systems Operations and Engineering coverage. This team quickly grew from only myself to 4 members providing 7-night per week coverage while the company was in its rapid growth phase.}
+    \resitem{At Rackspace, I was a member of a community support effort engaging customers via community forums in addition to my front line support role.}
     \resitem{Amateur Radio Operator - KF5MWZ, General Class}
     
 \end{ressection}
@@ -213,12 +179,6 @@
 \begin{ressection}{Education}
     \begin{resedusec}{Texas A\&M University} {College Station, TX} {Telecommunications Engineering Technology}
     \end{resedusec}
-
-    \resitem{Member of the Corps of Cadets, Company K-2, four years}
-    \resitem{Member of the 2008 National Champion Texas A\&M Fish Drill Team}
-    \resitem{Planned and executed an outfit reunion and Parent's Weekend banquet for +150 people with very limited assistance from underclassmen and peers}
-    \resitem{Member of TAULUG - Texas A\&M UNIX Linux Users Group}
-    \resitem{Helped execute CCDC - Collegiate Cyber Defense Competition - as a member of the planning and execution "Gold Team"}
 \end{ressection}
 \end{document}
 
