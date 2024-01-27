@@ -1,6 +1,7 @@
 \documentclass[10pt,oneside]{article}
 \usepackage{geometry}
 \usepackage[T1]{fontenc}
+\usepackage{enumitem}
 
 \pagestyle{empty}
 \geometry{letterpaper,tmargin=.63in,bmargin=.5in,lmargin=.5in,rmargin=.5in,headheight=0in,headsep=0in,footskip=.3in}
@@ -83,7 +84,7 @@
 
 % This is a simple sublist
 \newenvironment{reslist}[1]{
-    \resitem{\textbf{#1}}
+    \resitem{#1}
     \vspace{-5pt}
     \begin{itemize}
 }{
@@ -115,13 +116,6 @@
 \end{ressection}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{ressection}{Experience}
-    \begin{ressubsec}{Breco Tech, LLC}{Atlanta, GA}{Consultant: July 2023-Current}
-        \ressubitem{Private Consulting LLC to grow skills otherwise missing from my day job}
-        \ressubitem{AWS operations for startups looking to scale quickly by implementing container-based deployments early in software development}
-        \ressubitem{Implementing Prometheus and Loki based monitoring and log aggregation}
-        \ressubitem{Build out dashboarding via Grafana}
-    \end{ressubsec}
-
     \begin{ressubsec}{The Home Depot}{Atlanta, GA}{Staff Systems Engineer: June 2021-Current}
         \ressubitem{Built out new Kubernetes-based on-prem production app environment for THD App Teams which includes out of the box metrics and logging, alerting, and integration with other THD Enterprise services such as Artifactory to allow app teams to focus on their apps rather than supporting functions}
         \ressubitem{Infrastructure to support the on-prem environment is deployed into various GCP services}
@@ -169,8 +163,18 @@
 \end{ressection}
 
 \begin{ressection}{Related Experience}
-    \resitem{I maintain a small home lab that includes a Proxmox hypervisor, PiHole DNS Ad Blocking, Wireguard VPN server, Raspberry Pi-based Kubernetes cluster, as well as other services and personal programming projects.}
-    \resitem{I quickly prototyped a small web app to replace the paper bid sheets for a silent auction for the nonprofit my wife works for.}
+    \begin{reslist}{I stood up an LLC to cover some side projects helping friends with small businesses. These projects include:}
+        \resitem{CI/CD via GitHub Actions, AWS ECR, AWS EKS, and FluxCD}
+        \resitem{Monitoring, log aggregation, dashboarding, and alerting through Prometheus, Loki, and Grafana}
+    \end{reslist}
+    \begin{reslist}{I maintain a small home lab that includes:}
+        \resitem{Raspberry Pi-based Kubernetes cluster}
+        \resitem{Proxmox hypervisor}
+        \resitem{PiHole DNS Ad Blocking}
+        \resitem{Wireguard VPN server}
+        \resitem{Various services for personal use and programming projects}
+    \end{reslist}
+    \resitem{I wrote a small web app to replace paper bid sheets with QR codes for a silent auction for the nonprofit where my wife works.}
     \resitem{I quickly moved from L3 support to start the Systems Operations Center (SOC) team to provide 3rd shift Systems Operations and Engineering coverage. This team quickly grew from only myself to 4 members providing 7-night per week coverage while the company was in its rapid growth phase.}
     \resitem{At Rackspace, I was a member of a community support effort engaging customers via community forums in addition to my front line support role.}
     \resitem{Amateur Radio Operator - KF5MWZ, General Class}
